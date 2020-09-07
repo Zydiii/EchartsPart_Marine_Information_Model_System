@@ -13,7 +13,27 @@
         <p class="title">
           <span>
             <br />
-            {{name}}
+            <!-- {{name}} -->
+            <Row>
+              <li class="title1">
+                {{type}}
+              </li>
+              <li class="title1">
+                {{modelType}}
+              </li>
+              <li class="title1">
+                {{id}}
+              </li>
+              <li class="title2">
+                {{location}}
+              </li>
+              <li class="title3">
+                {{date}}
+              </li>
+              <li class="title4">
+                {{company}}
+              </li>
+            </Row>
             <br />
           </span>
         </p>
@@ -114,7 +134,27 @@
         <p class="title">
           <span>
             <br />
-            {{name}}
+            <!-- {{name}} -->
+            <Row>
+              <li class="title1">
+                {{type}}
+              </li>
+              <li class="title1">
+                {{modelType}}
+              </li>
+              <li class="title1">
+                {{id}}
+              </li>
+              <li class="title2">
+                {{location}}
+              </li>
+              <li class="title3">
+                {{date}}
+              </li>
+              <li class="title4">
+                {{company}}
+              </li>
+            </Row>
             <br />
           </span>
         </p>
@@ -163,7 +203,27 @@
         <p class="title">
           <span>
             <br />
-            {{name}}
+            <!-- {{name}} -->
+            <Row>
+              <li class="title1">
+                {{type}}
+              </li>
+              <li class="title1">
+                {{modelType}}
+              </li>
+              <li class="title1">
+                {{id}}
+              </li>
+              <li class="title2">
+                {{location}}
+              </li>
+              <li class="title3">
+                {{date}}
+              </li>
+              <li class="title4">
+                {{company}}
+              </li>
+            </Row>
             <br />
           </span>
         </p>
@@ -1305,6 +1365,40 @@ export default {
 </script>
 
 <style lang="less">
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.title1 {
+  width: 7%;
+  background-color: #ccc;
+  margin-right: 0.1%;
+  margin-left: 0.1%;
+  color:#566270;
+  font-family: "宋体";
+}
+.title2{
+  width: 15%;
+  background-color: #6E7783;
+  margin-right: 1%;
+  margin-left: 3%;
+  border:0.1px solid #fff;
+  font-family: "宋体";
+}
+.title3{
+  width: 10%;
+  background-color: #6E7783;
+  margin-right: 1%;
+  margin-left: 0.1%;
+  border:0.1px solid #fff;
+  font-family: "宋体";
+}
+.title4{
+  width: 9%;
+  background-color: rgb(0, 185, 241);
+  color:#566270;
+  font-family: "宋体";
+}
 button {
   box-shadow: none !important;
 }
