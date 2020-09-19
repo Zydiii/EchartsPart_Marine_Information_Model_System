@@ -36,6 +36,9 @@ export default {
             label: {
               backgroundColor: "#6a7985",
             },
+            crossStyle: {
+              color: "#67809f",
+            },
           },
         },
         grid: {
@@ -50,25 +53,26 @@ export default {
             axisLine: {
                 lineStyle:{
                     type:'dashed',
-                    color: '#fff'
+                    color: '#67809f'
                 }
             },
             splitLine: {
                 show: true,
                 lineStyle:{
-                    type:'dashed'
+                    type:'dashed',
+                    color: "#67809f", // 颜色
                 }
             },
             "axisTick":{       //x轴刻度线
                 "show":true,
                 lineStyle:{
                     type:'dashed',
-                    color: '#fff'
+                    color: '#67809f'
                 }
             },
             axisLabel: {
                 fontSize: 12,
-                color: '#fff',
+                color: '#67809f',
                 formatter: "{value}" + unit,
             }
         },
@@ -78,7 +82,8 @@ export default {
             splitLine: {
                 show: true,
                 lineStyle:{
-                    type:'dashed'
+                    type:'dashed',
+                    color: "#67809f", // 颜色
                 }
             },
             "axisTick":{       //y轴刻度线
@@ -89,7 +94,7 @@ export default {
             },
             axisLabel: {
                 fontSize: 12,
-                color: "#fff"
+                color: "#67809f"
             },
             scale: true
         },

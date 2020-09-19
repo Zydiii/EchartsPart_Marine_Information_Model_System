@@ -5,7 +5,7 @@
     </Button>
 
     <!-- 气象采集器 -->
-    <Modal v-model="show0" width="1300" class-name="infoModal" footer-hide>
+    <Modal v-model="show0" width="1300" class-name="infoModal" footer-hide :mask-closable="false">
       <p slot="close">
         <img style="height:35px;" src="../../assets/icons/chacha.svg" />
       </p>
@@ -15,24 +15,12 @@
             <br />
             <!-- {{name}} -->
             <Row>
-              <li class="title1">
-                {{type}}
-              </li>
-              <li class="title1">
-                {{modelType}}
-              </li>
-              <li class="title1">
-                {{id}}
-              </li>
-              <li class="title2">
-                {{location}}
-              </li>
-              <li class="title3">
-                {{date}}
-              </li>
-              <li class="title4">
-                {{company}}
-              </li>
+              <li class="title1">{{type}}</li>
+              <li class="title1">{{modelType}}</li>
+              <li class="title1">{{id}}</li>
+              <li class="title2">{{location}}</li>
+              <li class="title3">{{date}}</li>
+              <li class="title4">{{company}}</li>
             </Row>
             <br />
           </span>
@@ -43,7 +31,7 @@
             <i-col span="12">
               <!-- 温度 -->
               <Row>
-                <Card style="height:200px; background-color: #6E7783">
+                <Card style="height:200px; background-color: #fff">
                   <Divider orientation="left">
                     <img style="height:50px;" src="../../assets/icons/temper.png" />
                   </Divider>
@@ -58,7 +46,7 @@
               <br />
               <!-- 压强 -->
               <Row>
-                <Card style="height:200px; background-color: #6E7783">
+                <Card style="height:200px; background-color: #fff">
                   <Divider orientation="left">
                     <img style="height:50px;" src="../../assets/icons/press.png" />
                   </Divider>
@@ -73,7 +61,7 @@
               <br />
               <!-- 雨量 -->
               <Row>
-                <Card style="height:200px; background-color: #6E7783">
+                <Card style="height:200px; background-color: #fff">
                   <Divider orientation="left">
                     <img style="height:50px;" src="../../assets/icons/rain.png" />
                   </Divider>
@@ -91,7 +79,7 @@
               <!-- 风向、风速 -->
               <Row :gutter="10">
                 <i-col span="24">
-                  <Card style="height:419.7px; background-color: #6E7783">
+                  <Card style="height:419.7px; background-color: #fff">
                     <Divider orientation="left">
                       <img style="height:50px;" src="../../assets/icons/wind.png" />
                     </Divider>
@@ -107,7 +95,7 @@
               <br />
               <!-- 湿度 -->
               <Row>
-                <Card style="height:200px; background-color: #6E7783">
+                <Card style="height:200px; background-color: #fff">
                   <Divider orientation="left">
                     <img style="height:50px;" src="../../assets/icons/wet.png" />
                   </Divider>
@@ -126,7 +114,7 @@
       </div>
     </Modal>
     <!-- 生物采集器 -->
-    <Modal v-model="show1" width="1300" class-name="infoModal" footer-hide>
+    <Modal v-model="show1" width="1300" class-name="infoModal" footer-hide :mask-closable="false">
       <p slot="close">
         <img style="height:35px;" src="../../assets/icons/chacha.svg" />
       </p>
@@ -136,24 +124,12 @@
             <br />
             <!-- {{name}} -->
             <Row>
-              <li class="title1">
-                {{type}}
-              </li>
-              <li class="title1">
-                {{modelType}}
-              </li>
-              <li class="title1">
-                {{id}}
-              </li>
-              <li class="title2">
-                {{location}}
-              </li>
-              <li class="title3">
-                {{date}}
-              </li>
-              <li class="title4">
-                {{company}}
-              </li>
+              <li class="title1">{{type}}</li>
+              <li class="title1">{{modelType}}</li>
+              <li class="title1">{{id}}</li>
+              <li class="title2">{{location}}</li>
+              <li class="title3">{{date}}</li>
+              <li class="title4">{{company}}</li>
             </Row>
             <br />
           </span>
@@ -163,7 +139,7 @@
           <Row :gutter="16">
             <i-col span="12">
               <!-- 叶绿素 -->
-              <Card style="height:300px; background-color: #6E7783">
+              <Card style="height:300px; background-color: #fff">
                 <Divider orientation="left">
                   <img style="height:50px;" src="../../assets/icons/chlorophyll.png" />
                 </Divider>
@@ -177,7 +153,7 @@
             </i-col>
             <i-col span="12">
               <!-- 氧气含量 -->
-              <Card style="height:300px; background-color: #6E7783">
+              <Card style="height:300px; background-color: #fff">
                 <Divider orientation="left">
                   <img style="height:50px;" src="../../assets/icons/oxygen.png" />
                 </Divider>
@@ -195,7 +171,7 @@
       </div>
     </Modal>
     <!-- 水文采集器 -->
-    <Modal v-model="show2" width="1300" class-name="infoModal" footer-hide>
+    <Modal v-model="show2" width="1300" class-name="infoModal" footer-hide :mask-closable="false">
       <p slot="close">
         <img style="height:35px;" src="../../assets/icons/chacha.svg" />
       </p>
@@ -205,24 +181,12 @@
             <br />
             <!-- {{name}} -->
             <Row>
-              <li class="title1">
-                {{type}}
-              </li>
-              <li class="title1">
-                {{modelType}}
-              </li>
-              <li class="title1">
-                {{id}}
-              </li>
-              <li class="title2">
-                {{location}}
-              </li>
-              <li class="title3">
-                {{date}}
-              </li>
-              <li class="title4">
-                {{company}}
-              </li>
+              <li class="title1">{{type}}</li>
+              <li class="title1">{{modelType}}</li>
+              <li class="title1">{{id}}</li>
+              <li class="title2">{{location}}</li>
+              <li class="title3">{{date}}</li>
+              <li class="title4">{{company}}</li>
             </Row>
             <br />
           </span>
@@ -233,7 +197,7 @@
             <i-col span="12">
               <!-- 温度 -->
               <Row>
-                <Card style="height:200px; background-color: #6E7783">
+                <Card style="height:200px; background-color: #fff">
                   <Divider orientation="left">
                     <img style="height:50px;" src="../../assets/icons/temper.png" />
                   </Divider>
@@ -248,7 +212,7 @@
               <br />
               <!-- 盐度 -->
               <Row>
-                <Card style="height:200px; background-color: #6E7783">
+                <Card style="height:200px; background-color: #fff">
                   <Divider orientation="left">
                     <img style="height:50px;" src="../../assets/icons/salt.png" />
                   </Divider>
@@ -266,23 +230,29 @@
               <Row :gutter="10">
                 <!-- 流向、流速 -->
                 <i-col span="12">
-                  <Card style="height:419.7px; background-color: #6E7783">
+                  <Card style="height:419.7px; background-color: #fff">
                     <Divider orientation="left">
                       <img style="height:50px;" src="../../assets/icons/current.png" />
                     </Divider>
                     <div style="height:500px; margin-left: -10px;">
-                      <ChartRose style="width: 290px; height: 350px; margin: auto " :data="data2.currentData" />
+                      <ChartRose
+                        style="width: 290px; height: 350px; margin: auto "
+                        :data="data2.currentData"
+                      />
                     </div>
                   </Card>
                 </i-col>
                 <!-- 深度 -->
                 <i-col span="12">
-                  <Card style="height:419.7px; background-color: #6E7783">
+                  <Card style="height:419.7px; background-color: #fff">
                     <Divider orientation="left">
                       <img style="height:50px;" src="../../assets/icons/depth.png" />
                     </Divider>
                     <div style="height:500px; margin-left: -10px;">
-                      <ChartXBar style="width: 290px; height: 350px; margin: auto " :data="data2.depthData" />
+                      <ChartXBar
+                        style="width: 290px; height: 350px; margin: auto "
+                        :data="data2.depthData"
+                      />
                     </div>
                   </Card>
                 </i-col>
@@ -291,50 +261,139 @@
             </i-col>
           </Row>
           <Row :gutter="10">
-              <!-- 溶解氧 -->
-              <i-col span="8">
-                  <Card style="height:200px; background-color: #6E7783">
-                  <Divider orientation="left">
-                    <img style="height:50px;" src="../../assets/icons/dissolvedOxygen.png" />
-                  </Divider>
-                  <div style="height:200px; ">
-                    <ChartPolygonalLine
-                      style="width: 380px; height: 130px; margin: auto "
-                      :data="data2.dissolvedOxygenData"
-                    />
-                  </div>
-                </Card>
-              </i-col>
-              <!-- COD -->
-              <i-col span="8">
-                  <Card style="height:200px; background-color: #6E7783">
-                  <Divider orientation="left">
-                    <img style="height:50px;" src="../../assets/icons/cod.png" />
-                  </Divider>
-                  <div style="height:200px; ">
-                    <ChartPolygonalLine
-                      style="width: 380px; height: 130px; margin: auto "
-                      :data="data2.codData"
-                    />
-                  </div>
-                </Card>
-              </i-col>
-              <!-- 浊度 -->
-              <i-col span="8">
-                  <Card style="height:200px; background-color: #6E7783">
-                  <Divider orientation="left">
-                    <img style="height:50px;" src="../../assets/icons/turbidity.png" />
-                  </Divider>
-                  <div style="height:200px; ">
-                    <ChartPolygonalLine
-                      style="width: 380px; height: 130px; margin: auto "
-                      :data="data2.turbidityData"
-                    />
-                  </div>
-                </Card>
-              </i-col>
+            <!-- 溶解氧 -->
+            <i-col span="8">
+              <Card style="height:200px; background-color: #fff">
+                <Divider orientation="left">
+                  <img style="height:50px;" src="../../assets/icons/dissolvedOxygen.png" />
+                </Divider>
+                <div style="height:200px; ">
+                  <ChartPolygonalLine
+                    style="width: 380px; height: 130px; margin: auto "
+                    :data="data2.dissolvedOxygenData"
+                  />
+                </div>
+              </Card>
+            </i-col>
+            <!-- COD -->
+            <i-col span="8">
+              <Card style="height:200px; background-color: #fff">
+                <Divider orientation="left">
+                  <img style="height:50px;" src="../../assets/icons/cod.png" />
+                </Divider>
+                <div style="height:200px; ">
+                  <ChartPolygonalLine
+                    style="width: 380px; height: 130px; margin: auto "
+                    :data="data2.codData"
+                  />
+                </div>
+              </Card>
+            </i-col>
+            <!-- 浊度 -->
+            <i-col span="8">
+              <Card style="height:200px; background-color: #fff">
+                <Divider orientation="left">
+                  <img style="height:50px;" src="../../assets/icons/turbidity.png" />
+                </Divider>
+                <div style="height:200px; ">
+                  <ChartPolygonalLine
+                    style="width: 380px; height: 130px; margin: auto "
+                    :data="data2.turbidityData"
+                  />
+                </div>
+              </Card>
+            </i-col>
           </Row>
-          <br/>
+          <br />
+        </div>
+      </div>
+    </Modal>
+    <!-- 走航系统 -->
+    <Modal v-model="show3" width="1300" class-name="infoModal" footer-hide :mask-closable="false">
+      <p slot="close">
+        <img style="height:35px;" src="../../assets/icons/chacha.svg" />
+      </p>
+      <div class="body">
+        <Drawer
+          title="选配指标"
+          v-model="value1"
+          :inner="true"
+          :transfer="false"
+          :scrollable="true"
+          :closable="false"
+        >
+          <Tag
+            v-for="(item, index) in selectedTags"
+            :key="`item-${index}`"
+            @on-close="handleTagClose(index)"
+            size="large"
+            closable
+          >{{ item.name }}</Tag>
+          <Divider />
+          <Tag
+            v-for="item in unselectedTags"
+            :key="item"
+            :name="item"
+            @on-change="handleTagAdd"
+            size="large"
+            checkable
+          >{{ item.name }}</Tag>
+        </Drawer>
+
+        <p class="title">
+          <span>
+            <br />
+            <!-- {{name}} -->
+            <Row>
+              <li class="title1">{{type}}</li>
+              <li class="title1">{{modelType}}</li>
+              <li class="title1">{{id}}</li>
+              <li class="title2">{{location}}</li>
+              <li class="title3">{{date}}</li>
+              <li class="title4">{{company}}</li>
+              <li class="title5">
+                <Button @click="value1 = true" type="text" icon="md-settings" shape="circle"></Button>
+                <!-- <Button @click="deleteChart" icon="md-remove" type="primary" shape="circle"></Button> -->
+              </li>
+            </Row>
+            <br />
+          </span>
+        </p>
+
+        <div class="bodycard">
+          <Row :gutter="16">
+            <i-col v-for="(item, i) in baseTags" :key="`item-${i}`" span="8">
+              <!-- 叶绿素 -->
+              <Card style="height:200px; background-color: #fff">
+                <Divider orientation="left">
+                  <img style="height:50px;" :src="item.icon" />
+                </Divider>
+                <div style="height:200px; ">
+                  <ChartPolygonalLine
+                    style="width: 380px; height: 130px; margin: auto "
+                    :data="item.data"
+                  />
+                </div>
+              </Card>
+              <br />
+            </i-col>
+            <i-col v-for="(item1, i1) in selectedTags" :key="`item1-${i1}`" span="8">
+              <!-- 叶绿素 -->
+              <Card style="height:200px; background-color: #fff">
+                <Divider orientation="left">
+                  <img style="height:50px;" :src="item1.icon" />
+                </Divider>
+                <div style="height:200px; ">
+                  <ChartPolygonalLine
+                    style="width: 380px; height: 130px; margin: auto "
+                    :data="item1.data"
+                  />
+                </div>
+              </Card>
+              <br />
+            </i-col>
+          </Row>
+          <br />
         </div>
       </div>
     </Modal>
@@ -344,13 +403,15 @@
 <script>
 import ChartPolygonalLine from "../charts/polygonalLine.vue";
 import ChartRose from "../charts/rose.vue";
-import ChartXBar from "../charts/xbar.vue"
+import ChartXBar from "../charts/xbar.vue";
+//引用图片
+//import "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png" from '../../assets/icons/cod.png'
 
 export default {
   components: {
     ChartPolygonalLine,
     ChartRose,
-    ChartXBar
+    ChartXBar,
   },
   props: {
     iconInfo: Object,
@@ -360,10 +421,400 @@ export default {
       if (this.modalType == 0) this.show0 = true;
       else if (this.modalType == 1) this.show1 = true;
       else if (this.modalType == 2) this.show2 = true;
+      else if (this.modalType == 3) this.show3 = true;
+    },
+    addChart() {
+      this.numOfData3++;
+    },
+    deleteChart() {
+      this.numOfData3--;
+    },
+    handleTagClose(index) {
+      this.unselectedTags.push(this.selectedTags[index]);
+      this.selectedTags.splice(index, 1);
+    },
+    handleTagAdd(checked, name) {
+      var index = this.unselectedTags.indexOf(name);
+      this.selectedTags.push(this.unselectedTags[index]);
+      this.unselectedTags.splice(index, 1);
     },
   },
   data() {
     return {
+      unselectedTags: [
+        {
+          name: "营养盐",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "群落净生产力",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "粒径分布",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "光合作用效率",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "水色",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "溶解态有机物",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "DIC",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "pCO2",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        }
+      ],
+      selectedTags: [],
+      baseTags: [
+        {
+          name: "温度",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "溶解氧",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "pH",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "浊度",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "湿度",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "盐度",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "导电度",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        },
+        {
+          name: "叶绿素",
+          icon: "http://qfx2psjj1.hn-bkt.clouddn.com/icon.png",
+          data: {
+            seriesData: {
+              xdata: [
+                "07-31",
+                "08-01",
+                "08-02",
+                "08-03",
+                "08-04",
+                "08-05",
+                "08-06",
+              ],
+              ydata: [27.3, 28.2, 26.9, 27.5, 27.4, 28.2, 29.2],
+            },
+            colorData: {
+              areaColor: "rgba(60, 108, 71, 0.8)",
+              lineColor: "#519B60",
+            },
+            unitData: "℃",
+          },
+        }
+      ],
+      value1: false,
       type: "",
       modelType: "",
       id: "",
@@ -375,6 +826,7 @@ export default {
       show0: false,
       show1: false,
       show2: false,
+      show3: false,
       data0: {
         temperData: {
           seriesData: {
@@ -886,7 +1338,7 @@ export default {
               "08-05",
               "08-06",
             ],
-            ydata: [3.55, 3.56, 3.60, 3.51, 3.55, 3.56, 3.57],
+            ydata: [3.55, 3.56, 3.6, 3.51, 3.55, 3.56, 3.57],
           },
           colorData: {
             areaColor: "rgba(212, 153, 185, 0.8)",
@@ -896,8 +1348,8 @@ export default {
         },
         currentData: {
           polarData: {
-            center: ['50%', '40%'],
-            radius: ['0%', '79%'],
+            center: ["50%", "40%"],
+            radius: ["0%", "79%"],
           },
           angleAxisData: [
             { value: "0" },
@@ -1258,7 +1710,7 @@ export default {
           ],
         },
         depthData: {
-            seriesData: {
+          seriesData: {
             xdata: [
               "07-31",
               "08-01",
@@ -1276,7 +1728,7 @@ export default {
           unitData: " km",
         },
         dissolvedOxygenData: {
-            seriesData: {
+          seriesData: {
             xdata: [
               "07-31",
               "08-01",
@@ -1286,7 +1738,7 @@ export default {
               "08-05",
               "08-06",
             ],
-            ydata: [2.54, 2.50, 2.52, 2.48, 2.50, 2.54, 2.52],
+            ydata: [2.54, 2.5, 2.52, 2.48, 2.5, 2.54, 2.52],
           },
           colorData: {
             areaColor: "rgba(163, 218, 255, 0.8)",
@@ -1295,7 +1747,7 @@ export default {
           unitData: " mg/L",
         },
         codData: {
-            seriesData: {
+          seriesData: {
             xdata: [
               "07-31",
               "08-01",
@@ -1314,7 +1766,7 @@ export default {
           unitData: " mg/L",
         },
         turbidityData: {
-            seriesData: {
+          seriesData: {
             xdata: [
               "07-31",
               "08-01",
@@ -1331,8 +1783,9 @@ export default {
             lineColor: "#a8dba8",
           },
           unitData: " NTU",
-        }
+        },
       },
+      numOfData3: 4,
     };
   },
   mounted() {
@@ -1359,6 +1812,7 @@ export default {
       if (this.type == "气象采集器") this.modalType = 0;
       else if (this.type == "生物采集器") this.modalType = 1;
       else if (this.type == "水文采集器") this.modalType = 2;
+      else if (this.type == "走航系统") this.modalType = 3;
     });
   },
 };
@@ -1374,30 +1828,35 @@ li {
   background-color: #ccc;
   margin-right: 0.1%;
   margin-left: 0.1%;
-  color:#566270;
+  color: #566270;
   font-family: "宋体";
 }
-.title2{
+.title2 {
   width: 15%;
-  background-color: #6E7783;
+  background-color: #fff;
   margin-right: 1%;
   margin-left: 3%;
-  border:0.1px solid #fff;
+  border: 0.1px solid #67809f;
   font-family: "宋体";
+  color: #67809f;
 }
-.title3{
+.title3 {
   width: 10%;
-  background-color: #6E7783;
+  background-color: #fff;
   margin-right: 1%;
   margin-left: 0.1%;
-  border:0.1px solid #fff;
+  border: 0.1px solid #67809f;
+  font-family: "宋体";
+  color: #67809f;
+}
+.title4 {
+  width: 9%;
+  background-color: rgb(137, 196, 244);
+  color: #566270;
   font-family: "宋体";
 }
-.title4{
-  width: 9%;
-  background-color: rgb(0, 185, 241);
-  color:#566270;
-  font-family: "宋体";
+.title5 {
+  margin-left: 5%;
 }
 button {
   box-shadow: none !important;
@@ -1405,13 +1864,18 @@ button {
 .infoModal {
   .ivu-modal-content {
     top: 0;
-    background-color: rgba(241, 107, 111, 0.8);
+    background-color: rgba(137, 196, 244, 0.8);
     .ivu-modal-close {
       top: -17px;
       right: -15px;
     }
   }
-  .ivu-divider-horizontal.ivu-divider-with-text-center,
+  .ivu-divider-horizontal.ivu-divider-with-text-left:after,
+  .ivu-divider-horizontal.ivu-divider-with-text-left:before,
+  .ivu-divider-horizontal.ivu-divider-with-text-right:after,
+  .ivu-divider-horizontal.ivu-divider-with-text-right:before {
+    border-top: 1px solid #67809f;
+  }
   .ivu-divider-horizontal.ivu-divider-with-text-left,
   .ivu-divider-horizontal.ivu-divider-with-text-right {
     margin: 0px;
@@ -1428,7 +1892,7 @@ button {
     margin: auto;
   }
   .body {
-    background-color: rgba(47, 79, 79, 0.8);
+    background-color: rgba(237, 240, 243, 0.8);
     .title {
       color: #fff;
       text-align: center;
@@ -1439,6 +1903,9 @@ button {
     .bodycard {
       margin-left: 16px;
       margin-right: 16px;
+    }
+    .ivu-drawer-content {
+      height: 350px;
     }
   }
 }

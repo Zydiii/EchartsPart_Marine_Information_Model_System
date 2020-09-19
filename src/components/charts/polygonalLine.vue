@@ -35,9 +35,13 @@ export default {
           axisPointer: {
             type: "cross",
             label: {
-              backgroundColor: "#6a7985",
+              backgroundColor: "#67809f",
+            },
+            crossStyle: {
+              color: "#67809f",
             },
           },
+          
         },
         grid: {
           top: "1%",
@@ -54,11 +58,15 @@ export default {
           axisLine: {
             onZero: false,
             show: false,
+            lineStyle: {
+              color: "#67809f", // 颜色
+            },
           },
           splitLine: {
             show: true,
             lineStyle: {
               type: "dashed",
+              color: "#67809f", // 颜色
             },
           },
           axisTick: {
@@ -66,12 +74,12 @@ export default {
             show: true,
             lineStyle: {
               type: "dashed",
-              color: "#fff",
+              color: "#67809f",
             },
           },
           axisLabel: {
             fontSize: 12,
-            color: "#fff",
+            color: "#67809f",
           },
         },
         yAxis: {
@@ -79,6 +87,7 @@ export default {
             show: true,
             lineStyle: {
               type: "dashed",
+              color: "#67809f", // 颜色
             },
           },
           axisTick: {
@@ -93,7 +102,7 @@ export default {
           axisLabel: {
             formatter: "{value}" + unit,
             fontSize: 12,
-            color: "#fff",
+            color: "#67809f",
           },
           scale: true,
         },

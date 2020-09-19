@@ -37,7 +37,10 @@ export default {
           axisPointer: {
             type: "cross",
             label: {
-              backgroundColor: "#6a7985",
+              backgroundColor: "#67809f",
+            },
+            crossStyle: {
+              color: "#67809f",
             },
           },
         },
@@ -51,18 +54,22 @@ export default {
           },
           splitLine: {
             show: true,
+
+            lineStyle: {
+              color: "#67809f", // 颜色
+            },
           },
           axisLabel: {
             show: true,
             interval: 0, //坐标轴刻度标签的显示间隔，在类目轴中有效
             formatter: "{value}"+unit,
-            color: "#fff",
+            color: "#67809f",
             fontSize: 9,
           },
           axisLine: {
             show: true,
             lineStyle: {
-              color: "#ccc",
+              color: "#67809f",
             },
           },
         },
@@ -85,8 +92,7 @@ export default {
         },
         polar: polarData,
         series: [
-          {
-          
+          {      
             barCategoryGap: 0,
             type: "bar",
             data: yData[0],
@@ -94,7 +100,7 @@ export default {
             name: legendName[0],
             stack: "a",
             itemStyle: {
-              borderColor: "#ccc",
+              borderColor: "#67809f",
               borderWidth: 0.01,
             },
           },
@@ -106,7 +112,7 @@ export default {
             name: legendName[1],
             stack: "a",
             itemStyle: {
-              borderColor: "#ccc",
+              borderColor: "#67809f",
               borderWidth: 0.01,
             },
           },
@@ -118,7 +124,7 @@ export default {
             name: legendName[2],
             stack: "a",
             itemStyle: {
-              borderColor: "#ccc",
+              borderColor: "#67809f",
               borderWidth: 0.01,
             },
           },
@@ -130,7 +136,7 @@ export default {
             name: legendName[3],
             stack: "a",
             itemStyle: {
-              borderColor: "#ccc",
+              borderColor: "#67809f",
               borderWidth: 0.01,
             },
           },
@@ -142,7 +148,7 @@ export default {
             name: legendName[4],
             stack: "a",
             itemStyle: {
-              borderColor: "#ccc",
+              borderColor: "#67809f",
               borderWidth: 0.01,
             },
           },
@@ -154,7 +160,7 @@ export default {
             name: legendName[5],
             stack: "a",
             itemStyle: {
-              borderColor: "#ccc",
+              borderColor: "#67809f",
               borderWidth: 0.01,
             },
           },
@@ -166,7 +172,7 @@ export default {
           y: "bottom",
           padding: [0, 0, 10, 0],
           textStyle:{//图例文字的样式
-            color:'#fff',
+            color:'#67809f',
             fontSize:11
           },
         },
